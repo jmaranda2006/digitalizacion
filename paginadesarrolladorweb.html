@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jose Aranda - Desarrollador Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="paginadesarrolladorwebcss.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Portada con fondo y enlaces minimalistas -->
+    <!-- Portada con fondo -->
     <header class="hero" id="inicio">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">Jose Aranda</h1>
             <p class="hero-subtitle">Desarrollador Web</p>
@@ -23,19 +25,22 @@
         </div>
     </header>
 
-    <!-- Sección "Sobre mí" -->
-    <section class="about" id="sobre-mi">
-        <div class="container">
-            <h2 class="section-title">Sobre mí</h2>
-            <p>Soy Jose Aranda, desarrollador web con experiencia en la creación de soluciones digitales modernas. Me apasiona transformar ideas en experiencias funcionales, visualmente atractivas y efectivas.</p>
-        </div>
-    </section>
+    <!-- Menú con contenido individual -->
+    <main>
+        <section class="menu" id="sobre-mi">
+            <div class="menu-header">
+                <h2 class="section-title">Sobre mí</h2>
+            </div>
+            <div class="menu-content">
+                <p>Soy Jose Aranda, desarrollador web con experiencia en la creación de soluciones digitales modernas. Me apasiona transformar ideas en experiencias funcionales, visualmente atractivas y efectivas.</p>
+            </div>
+        </section>
 
-    <!-- Sección "Habilidades" -->
-    <section class="skills" id="habilidades">
-        <div class="container">
-            <h2 class="section-title">Habilidades</h2>
-            <div class="skills-grid">
+        <section class="menu" id="habilidades">
+            <div class="menu-header">
+                <h2 class="section-title">Habilidades</h2>
+            </div>
+            <div class="menu-content skills-grid">
                 <div class="skill">
                     <h3>HTML & CSS</h3>
                     <p>Desarrollo de interfaces limpias y responsivas.</p>
@@ -52,15 +57,22 @@
                     <h3>Node.js</h3>
                     <p>Construcción de back-ends robustos.</p>
                 </div>
+                    <div class="skill">
+                        <h3>PHP</h3>
+                        <p>lenguaje dinámico para servidores.</p>
+                    </div>
+                <div class="skill">
+                    <h3>C#</h3>
+                    <p>lenguaje versátil para aplicaciones.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección "Proyectos" -->
-    <section class="projects" id="proyectos">
-        <div class="container">
-            <h2 class="section-title">Proyectos</h2>
-            <div class="projects-grid">
+        <section class="menu" id="proyectos">
+            <div class="menu-header">
+                <h2 class="section-title">Proyectos</h2>
+            </div>
+            <div class="menu-content projects-grid">
                 <div class="project">
                     <h3>Proyecto 1</h3>
                     <p>Descripción breve del proyecto, tecnologías y objetivos.</p>
@@ -74,21 +86,22 @@
                     <p>Descripción breve del proyecto, tecnologías y objetivos.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección "Contacto" -->
-    <section class="contact" id="contacto">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <form action="#" class="contact-form">
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <textarea placeholder="Mensaje" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-        </div>
-    </section>
+        <section class="menu" id="contacto">
+            <div class="menu-header">
+                <h2 class="section-title">Contacto</h2>
+            </div>
+            <div class="menu-content">
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <textarea placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- Pie de página -->
     <footer class="footer">
